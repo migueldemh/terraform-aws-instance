@@ -15,3 +15,8 @@ variable "aws_region" {
   default     = "eu-central-1"
   description = "AWS region for all resources"
 }
+
+variable "availability_zone_names" {
+  type    = list(string)
+  default = ["us-west-1a"]
+}
